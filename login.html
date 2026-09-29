@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Swiggy Clone</title>
+  <meta name="description" content="Login to your Swiggy Clone account to order food, track orders and claim discount vouchers.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="Swiggy Clone" class="nav-logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="restaurants.html" class="nav-item">Restaurants</a>
+        <a href="offers.html" class="nav-item">Offers</a>
+        <a href="search.html" class="nav-item">Search</a>
+        <a href="login.html" class="nav-item active">Login</a>
+        <a href="cart.html" class="cart-icon-btn">Cart <span class="cart-count">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- LOGIN SECTION -->
+  <main class="auth-wrapper">
+    <div class="auth-card-container">
+      <div>
+        <img src="images/hero-food.jpg" alt="Delicious Food Feast" class="auth-side-img">
+      </div>
+      <div class="auth-form-wrap">
+        <h1 class="auth-title">Welcome Back</h1>
+        <p class="auth-subtitle">Login to access your orders, offers and favourite restaurants.</p>
+        
+        <form action="index.html" method="get">
+          <div class="form-group">
+            <label for="user-email" class="form-label">Email or Phone Number</label>
+            <input type="text" id="user-email" class="form-input" placeholder="Enter your email or 10-digit mobile" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="user-password" class="form-label">Password</label>
+            <input type="password" id="user-password" class="form-input" placeholder="Enter your password" required>
+          </div>
+          
+          <div class="auth-row-options">
+            <label class="auth-checkbox-label">
+              <input type="checkbox" checked>
+              <span>Remember me</span>
+            </label>
+            <a href="login.html" class="auth-link">Forgot Password?</a>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Login to Continue</button>
+        </form>
+
+        <p class="auth-footer-text">
+          Don't have an account? <a href="login.html" class="auth-link">Create Account</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Swiggy Clone</h3>
+          <p class="footer-brand-desc">Delicious food delivered to your doorstep from top restaurants with lightning-fast delivery.</p>
+          <p class="footer-brand-desc">© 2026 Swiggy Clone. All rights reserved.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">About Us</a></li>
+            <li><a href="restaurants.html" class="footer-link">Team</a></li>
+            <li><a href="offers.html" class="footer-link">Careers</a></li>
+            <li><a href="index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact & Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Help & Support</a></li>
+            <li><a href="index.html" class="footer-link">Partner with us</a></li>
+            <li><a href="index.html" class="footer-link">Ride with us</a></li>
+            <li><a href="index.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="index.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="index.html" class="footer-link">Cookie Policy</a></li>
+            <li><a href="index.html" class="footer-link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with pure HTML & CSS for high-speed performance.</p>
+        <p>GitHub & Vercel Deployment Ready</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

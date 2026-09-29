@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Dishes & Restaurants - Swiggy Clone</title>
+  <meta name="description" content="Search for food items, cuisines and restaurants. Explore instant food results and discounts.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="Swiggy Clone" class="nav-logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="restaurants.html" class="nav-item">Restaurants</a>
+        <a href="offers.html" class="nav-item">Offers</a>
+        <a href="search.html" class="nav-item active">Search</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cart.html" class="cart-icon-btn">Cart <span class="cart-count">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SEARCH HEADER -->
+  <div class="search-header-sec">
+    <div class="container">
+      <form action="search.html" method="get" class="search-large-bar">
+        <input type="text" name="q" placeholder="Search for dishes or restaurants" value="Biryani">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+
+      <!-- POPULAR SEARCHES CHIPS -->
+      <div class="chips-row">
+        <span style="font-size: 13px; font-weight: 700; color: var(--text-muted); align-self: center;">Popular Searches:</span>
+        <a href="search.html" class="chip active">Biryani</a>
+        <a href="search.html" class="chip">Pizza</a>
+        <a href="search.html" class="chip">Burger</a>
+        <a href="search.html" class="chip">Momos</a>
+        <a href="search.html" class="chip">Pasta</a>
+        <a href="search.html" class="chip">Dosa</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH RESULTS -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Search Results</h1>
+          <p class="section-subtitle">Showing 10+ matching dishes ready for delivery</p>
+        </div>
+      </div>
+
+      <!-- VISUAL FILTER BUTTONS -->
+      <div class="filters-bar">
+        <button type="button" class="filter-btn active">All</button>
+        <button type="button" class="filter-btn">Veg</button>
+        <button type="button" class="filter-btn">Non-Veg</button>
+        <button type="button" class="filter-btn">Under ₹200</button>
+        <button type="button" class="filter-btn">Rating 4+</button>
+        <button type="button" class="filter-btn">Popular</button>
+      </div>
+
+      <!-- FOOD CARDS GRID -->
+      <div class="grid-4">
+        <!-- 1. Biryani -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/biryani.jpg" alt="Hyderabadi Chicken Biryani" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon non-veg"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Hyderabadi Biryani</h2>
+            </div>
+            <p class="cuisine">Biryani House • ★ 4.6</p>
+            <p class="food-desc">Slow dum-cooked basmati rice with succulent spice-marinated chicken cuts, served with salan.</p>
+            <div class="food-footer">
+              <span class="food-price">₹280</span>
+              <a href="food-details.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Pizza -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/pizza.jpg" alt="Farmhouse Special Pizza" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Farmhouse Pizza</h2>
+            </div>
+            <p class="cuisine">Pizza Corner • ★ 4.4</p>
+            <p class="food-desc">Crisp hand-stretched crust topped with herb mozzarella, crunchy bell peppers, and mushrooms.</p>
+            <div class="food-footer">
+              <span class="food-price">₹320</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Burger -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/burger.jpg" alt="Crispy Double Burger" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Crispy Double Burger</h2>
+            </div>
+            <p class="cuisine">Burger Point • ★ 4.2</p>
+            <p class="food-desc">Stacked golden fried patty seasoned with special herbs, garlic mayo, and toasted brioche buns.</p>
+            <div class="food-footer">
+              <span class="food-price">₹169</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Momos -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/momos.jpg" alt="Steamed Darjeeling Momos" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Steamed Veg Momos</h2>
+            </div>
+            <p class="cuisine">Momos Hub • ★ 4.5</p>
+            <p class="food-desc">Steamed translucent dim sum pockets stuffed with finely minced vegetables and fresh ginger.</p>
+            <div class="food-footer">
+              <span class="food-price">₹120</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Dosa -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/dosa.jpg" alt="Mysore Masala Dosa" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Mysore Masala Dosa</h2>
+            </div>
+            <p class="cuisine">Dosa Cafe • ★ 4.7</p>
+            <p class="food-desc">Authentic fermented rice crepe roasted in pure ghee with red garlic chutney and spiced potatoes.</p>
+            <div class="food-footer">
+              <span class="food-price">₹140</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Paneer -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/paneer.jpg" alt="Shahi Paneer" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Shahi Paneer Masala</h2>
+            </div>
+            <p class="cuisine">Spice Kitchen • ★ 4.5</p>
+            <p class="food-desc">Tender fresh cottage cheese in a regal creamy saffron and cashew nut curry.</p>
+            <div class="food-footer">
+              <span class="food-price">₹240</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Noodles -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/noodles.jpg" alt="Chilli Garlic Hakka Noodles" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Hakka Veg Noodles</h2>
+            </div>
+            <p class="cuisine">Chinese Bowl • ★ 4.2</p>
+            <p class="food-desc">Wok-tossed fresh wheat noodles with crunchy julienned vegetables, soy sauce, and scallions.</p>
+            <div class="food-footer">
+              <span class="food-price">₹170</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Pasta -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/pasta.jpg" alt="Creamy Penne Arrabiata" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Penne Arrabiata</h2>
+            </div>
+            <p class="cuisine">Pasta Italia • ★ 4.3</p>
+            <p class="food-desc">Italian durum wheat penne tossed in fiery crushed red pepper and roasted garlic tomato sauce.</p>
+            <div class="food-footer">
+              <span class="food-price">₹210</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Thali -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/thali.jpg" alt="Special Royal Thali" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Special Royal Thali</h2>
+            </div>
+            <p class="cuisine">Royal Thali • ★ 4.8</p>
+            <p class="food-desc">Complete wholesome meal containing 2 curries, dal makhani, 3 rotis, jeera rice, and gulab jamun.</p>
+            <div class="food-footer">
+              <span class="food-price">₹290</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Fries -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/fries.jpg" alt="Peri Peri French Fries" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h2 class="card-title">Peri Peri Fries</h2>
+            </div>
+            <p class="cuisine">Burger Point • ★ 4.4</p>
+            <p class="food-desc">Golden crisp potato fries dusted generously with spicy African peri-peri seasoning mix.</p>
+            <div class="food-footer">
+              <span class="food-price">₹110</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Swiggy Clone</h3>
+          <p class="footer-brand-desc">Delicious food delivered to your doorstep from top restaurants with lightning-fast delivery.</p>
+          <p class="footer-brand-desc">© 2026 Swiggy Clone. All rights reserved.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">About Us</a></li>
+            <li><a href="restaurants.html" class="footer-link">Team</a></li>
+            <li><a href="offers.html" class="footer-link">Careers</a></li>
+            <li><a href="index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact & Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Help & Support</a></li>
+            <li><a href="index.html" class="footer-link">Partner with us</a></li>
+            <li><a href="index.html" class="footer-link">Ride with us</a></li>
+            <li><a href="index.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="index.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="index.html" class="footer-link">Cookie Policy</a></li>
+            <li><a href="index.html" class="footer-link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with pure HTML & CSS for high-speed performance.</p>
+        <p>GitHub & Vercel Deployment Ready</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - Swiggy Clone</title>
+  <meta name="description" content="View items in your cart, apply promo discounts and proceed to express checkout.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="Swiggy Clone" class="nav-logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="restaurants.html" class="nav-item">Restaurants</a>
+        <a href="offers.html" class="nav-item">Offers</a>
+        <a href="search.html" class="nav-item">Search</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cart.html" class="cart-icon-btn active">Cart <span class="cart-count">4</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CART SECTION -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Your Cart (4 Items)</h1>
+          <p class="section-subtitle">Delivering to: Home - 402 Sunshine Towers, Park Street</p>
+        </div>
+      </div>
+
+      <div class="cart-layout">
+        <!-- LEFT: ITEMS LIST -->
+        <div class="cart-items-card">
+          <!-- Item 1 -->
+          <div class="cart-item-row">
+            <img src="images/biryani.jpg" alt="Chicken Biryani" class="cart-item-img">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Chicken Dum Biryani</h3>
+              <p class="cart-item-rest">Biryani House • Non-Veg</p>
+              <div class="cart-item-price">₹280</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="qty-selector">
+                <button type="button" class="qty-btn">−</button>
+                <span>1</span>
+                <button type="button" class="qty-btn">+</button>
+              </div>
+              <button type="button" class="btn-remove">✕</button>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="cart-item-row">
+            <img src="images/burger.jpg" alt="Crispy Veg Burger" class="cart-item-img">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Crispy Veg Burger</h3>
+              <p class="cart-item-rest">Burger Point • Veg</p>
+              <div class="cart-item-price">₹179</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="qty-selector">
+                <button type="button" class="qty-btn">−</button>
+                <span>1</span>
+                <button type="button" class="qty-btn">+</button>
+              </div>
+              <button type="button" class="btn-remove">✕</button>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="cart-item-row">
+            <img src="images/fries.jpg" alt="Peri Peri French Fries" class="cart-item-img">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Peri Peri French Fries</h3>
+              <p class="cart-item-rest">Burger Point • Veg</p>
+              <div class="cart-item-price">₹110</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="qty-selector">
+                <button type="button" class="qty-btn">−</button>
+                <span>1</span>
+                <button type="button" class="qty-btn">+</button>
+              </div>
+              <button type="button" class="btn-remove">✕</button>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="cart-item-row">
+            <img src="images/samosa.jpg" alt="Crispy Punjabi Samosa" class="cart-item-img">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Crispy Punjabi Samosas (2 pcs)</h3>
+              <p class="cart-item-rest">Chai Junction • Veg</p>
+              <div class="cart-item-price">₹90</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="qty-selector">
+                <button type="button" class="qty-btn">−</button>
+                <span>1</span>
+                <button type="button" class="qty-btn">+</button>
+              </div>
+              <button type="button" class="btn-remove">✕</button>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px dashed var(--border);">
+            <a href="restaurants.html" class="btn btn-outline btn-sm">+ Add more items from restaurants</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: BILL DETAILS & COUPONS -->
+        <div>
+          <div class="bill-card">
+            <h2 style="font-size: 18px; font-weight: 800; margin-bottom: 16px; color: var(--dark);">Apply Coupon</h2>
+            <div class="coupon-input-wrap">
+              <input type="text" class="coupon-input" placeholder="Enter coupon" value="WELCOME50">
+              <button type="button" class="btn btn-primary btn-sm">Applied</button>
+            </div>
+
+            <h2 style="font-size: 18px; font-weight: 800; margin-bottom: 16px; color: var(--dark);">Bill Details</h2>
+            <div class="bill-rows">
+              <div class="bill-row">
+                <span>Item Total</span>
+                <span>₹659</span>
+              </div>
+              <div class="bill-row">
+                <span>Delivery Partner Fee</span>
+                <span>₹35</span>
+              </div>
+              <div class="bill-row">
+                <span>Platform Convenience Fee</span>
+                <span>₹5</span>
+              </div>
+              <div class="bill-row discount-row">
+                <span>Coupon Discount (WELCOME50)</span>
+                <span>− ₹100</span>
+              </div>
+              <div class="bill-row">
+                <span>Govt Taxes & Restaurant GST</span>
+                <span>₹32</span>
+              </div>
+              <div class="bill-total-row">
+                <span>TO PAY</span>
+                <span style="color: var(--primary);">₹631</span>
+              </div>
+            </div>
+
+            <div style="background-color: var(--primary-light); padding: 10px 14px; border-radius: var(--radius-md); font-size: 13px; font-weight: 700; color: var(--primary); margin-bottom: 20px; text-align: center;">
+              🎉 You are saving ₹100 on this order!
+            </div>
+
+            <a href="checkout.html" class="btn btn-primary btn-block">Proceed to Checkout →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Swiggy Clone</h3>
+          <p class="footer-brand-desc">Delicious food delivered to your doorstep from top restaurants with lightning-fast delivery.</p>
+          <p class="footer-brand-desc">© 2026 Swiggy Clone. All rights reserved.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">About Us</a></li>
+            <li><a href="restaurants.html" class="footer-link">Team</a></li>
+            <li><a href="offers.html" class="footer-link">Careers</a></li>
+            <li><a href="index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact & Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Help & Support</a></li>
+            <li><a href="index.html" class="footer-link">Partner with us</a></li>
+            <li><a href="index.html" class="footer-link">Ride with us</a></li>
+            <li><a href="index.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="index.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="index.html" class="footer-link">Cookie Policy</a></li>
+            <li><a href="index.html" class="footer-link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with pure HTML & CSS for high-speed performance.</p>
+        <p>GitHub & Vercel Deployment Ready</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

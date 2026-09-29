@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Restaurants Near You - Swiggy Clone</title>
+  <meta name="description" content="Explore top-rated restaurants near you with lightning fast delivery, live tracking and great offers.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="Swiggy Clone" class="nav-logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="restaurants.html" class="nav-item active">Restaurants</a>
+        <a href="offers.html" class="nav-item">Offers</a>
+        <a href="search.html" class="nav-item">Search</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cart.html" class="cart-icon-btn">Cart <span class="cart-count">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- RESTAURANTS SECTION -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Restaurants near you</h1>
+          <p class="section-subtitle">Showing 12 popular food destinations delivering to your current location</p>
+        </div>
+      </div>
+
+      <!-- VISUAL FILTER BUTTONS -->
+      <div class="filters-bar">
+        <button type="button" class="filter-btn active">All</button>
+        <button type="button" class="filter-btn">Fast Delivery</button>
+        <button type="button" class="filter-btn">Ratings 4.0+</button>
+        <button type="button" class="filter-btn">Pure Veg</button>
+        <button type="button" class="filter-btn">Offers & Discounts</button>
+        <button type="button" class="filter-btn">Less than ₹300</button>
+      </div>
+
+      <!-- RESTAURANTS GRID -->
+      <div class="grid-4">
+        <!-- 1. Spice Kitchen -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/paneer.jpg" alt="Spice Kitchen" class="card-img">
+            <span class="discount-ribbon">50% OFF UPTO ₹100</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Spice Kitchen</h2>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.5</span>
+              <span class="delivery-time">25-30 mins</span>
+            </div>
+            <p class="cuisine">North Indian, Mughlai, Rolls</p>
+            <p class="location-price">₹350 for two • Sector 18</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Biryani House -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/biryani.jpg" alt="Biryani House" class="card-img">
+            <span class="discount-ribbon">FLAT ₹120 OFF</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Biryani House</h2>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.6</span>
+              <span class="delivery-time">20-25 mins</span>
+            </div>
+            <p class="cuisine">Hyderabadi, Biryani, Mughlai</p>
+            <p class="location-price">₹400 for two • Central Market</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Pizza Corner -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/pizza.jpg" alt="Pizza Corner" class="card-img">
+            <span class="discount-ribbon">40% OFF PIZZAS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Pizza Corner</h2>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.3</span>
+              <span class="delivery-time">30-35 mins</span>
+            </div>
+            <p class="cuisine">Pizzas, Italian, Garlic Bread</p>
+            <p class="location-price">₹500 for two • High Street</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Burger Point -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/burger.jpg" alt="Burger Point" class="card-img">
+            <span class="discount-ribbon">FREE DELIVERY</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Burger Point</h2>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.2</span>
+              <span class="delivery-time">15-20 mins</span>
+            </div>
+            <p class="cuisine">Burgers, Fries, Beverages</p>
+            <p class="location-price">₹250 for two • City Center</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Dosa Cafe -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/dosa.jpg" alt="Dosa Cafe" class="card-img">
+            <span class="discount-ribbon">20% OFF COMBOS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Dosa Cafe</h2>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.7</span>
+              <span class="delivery-time">20-25 mins</span>
+            </div>
+            <p class="cuisine">South Indian, Filter Coffee, Idli</p>
+            <p class="location-price">₹200 for two • Temple Road</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Chinese Bowl -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/noodles.jpg" alt="Chinese Bowl" class="card-img">
+            <span class="discount-ribbon">FLAT ₹75 OFF</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Chinese Bowl</h2>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.1</span>
+              <span class="delivery-time">25-30 mins</span>
+            </div>
+            <p class="cuisine">Chinese, Asian, Chowmein</p>
+            <p class="location-price">₹300 for two • Park Plaza</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Royal Thali -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/thali.jpg" alt="Royal Thali" class="card-img">
+            <span class="discount-ribbon">30% OFF ON THALIS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Royal Thali</h2>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.8</span>
+              <span class="delivery-time">30-40 mins</span>
+            </div>
+            <p class="cuisine">Pure Veg, Rajasthani, Gujarati</p>
+            <p class="location-price">₹450 for two • Heritage Lane</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Momos Hub -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/momos.jpg" alt="Momos Hub" class="card-img">
+            <span class="discount-ribbon">BUY 1 GET 1</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Momos Hub</h2>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.4</span>
+              <span class="delivery-time">15-20 mins</span>
+            </div>
+            <p class="cuisine">Tibetan, Dumplings, Fried Momos</p>
+            <p class="location-price">₹180 for two • Station Road</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Food Street -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/sandwich.jpg" alt="Food Street" class="card-img">
+            <span class="discount-ribbon">FLAT ₹50 OFF</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Food Street</h2>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.3</span>
+              <span class="delivery-time">20-25 mins</span>
+            </div>
+            <p class="cuisine">Sandwiches, Fast Food, Snacks</p>
+            <p class="location-price">₹220 for two • Mall Road</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Sweet Corner -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/cake.jpg" alt="Sweet Corner" class="card-img">
+            <span class="discount-ribbon">25% OFF DESSERTS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Sweet Corner</h2>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.7</span>
+              <span class="delivery-time">20-25 mins</span>
+            </div>
+            <p class="cuisine">Cakes, Pastries, Sweets</p>
+            <p class="location-price">₹300 for two • Baker Street</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Pasta Italia -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/pasta.jpg" alt="Pasta Italia" class="card-img">
+            <span class="discount-ribbon">15% OFF ORDERS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Pasta Italia</h2>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.4</span>
+              <span class="delivery-time">25-30 mins</span>
+            </div>
+            <p class="cuisine">Italian, Pastas, Lasagna</p>
+            <p class="location-price">₹420 for two • Club Road</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Chai & Samosa Junction -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/samosa.jpg" alt="Chai & Samosa Junction" class="card-img">
+            <span class="discount-ribbon">FLAT ₹30 OFF</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Chai & Samosa Junction</h2>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.5</span>
+              <span class="delivery-time">15-20 mins</span>
+            </div>
+            <p class="cuisine">Tea, Street Food, Samosas</p>
+            <p class="location-price">₹150 for two • Metro Station</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Swiggy Clone</h3>
+          <p class="footer-brand-desc">Delicious food delivered to your doorstep from top restaurants with lightning-fast delivery.</p>
+          <p class="footer-brand-desc">© 2026 Swiggy Clone. All rights reserved.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">About Us</a></li>
+            <li><a href="restaurants.html" class="footer-link">Team</a></li>
+            <li><a href="offers.html" class="footer-link">Careers</a></li>
+            <li><a href="index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact & Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Help & Support</a></li>
+            <li><a href="index.html" class="footer-link">Partner with us</a></li>
+            <li><a href="index.html" class="footer-link">Ride with us</a></li>
+            <li><a href="index.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="index.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="index.html" class="footer-link">Cookie Policy</a></li>
+            <li><a href="index.html" class="footer-link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with pure HTML & CSS for high-speed performance.</p>
+        <p>GitHub & Vercel Deployment Ready</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

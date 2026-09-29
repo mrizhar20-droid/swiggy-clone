@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Offers & Promo Codes - Swiggy Clone</title>
+  <meta name="description" content="Discover best food delivery coupons, deals, bank discounts and promo codes on Swiggy Clone.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="Swiggy Clone" class="nav-logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="restaurants.html" class="nav-item">Restaurants</a>
+        <a href="offers.html" class="nav-item active">Offers</a>
+        <a href="search.html" class="nav-item">Search</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cart.html" class="cart-icon-btn">Cart <span class="cart-count">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- OFFERS SECTION -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Best Food Offers</h1>
+          <p class="section-subtitle">Save maximum with verified coupons and restaurant festival deals</p>
+        </div>
+      </div>
+
+      <!-- VISUAL FILTER BUTTONS -->
+      <div class="filters-bar">
+        <button type="button" class="filter-btn active">All Deals</button>
+        <button type="button" class="filter-btn">New User</button>
+        <button type="button" class="filter-btn">Free Delivery</button>
+        <button type="button" class="filter-btn">Biryani Deals</button>
+        <button type="button" class="filter-btn">Pizza & Burger</button>
+        <button type="button" class="filter-btn">Dessert Combos</button>
+      </div>
+
+      <!-- 8+ OFFER CARDS -->
+      <div class="grid-4">
+        <!-- Offer 1 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/biryani.jpg" alt="First Order Offer" class="card-img">
+            <span class="offer-badge">50% OFF</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">50% OFF On First Order</h2>
+            <p class="offer-desc">Flat 50% discount up to ₹120 on your first food order across all restaurants.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">WELCOME50</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+
+        <!-- Offer 2 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/pizza.jpg" alt="Pizza Lovers Offer" class="card-img">
+            <span class="offer-badge">FLAT ₹100 OFF</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">₹100 OFF On Pizzas</h2>
+            <p class="offer-desc">Treat yourself to cheesy pizzas and get flat ₹100 off on orders above ₹399.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">PIZZALOVE</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+
+        <!-- Offer 3 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/fries.jpg" alt="Free Delivery Offer" class="card-img">
+            <span class="offer-badge">FREE DELIVERY</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">Zero Delivery Charges</h2>
+            <p class="offer-desc">Free delivery on your favourite meals from select neighbourhood restaurants.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">FREEDEL</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+
+        <!-- Offer 4 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/burger.jpg" alt="Buy 1 Get 1 Burger" class="card-img">
+            <span class="offer-badge">BUY 1 GET 1</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">Buy 1 Get 1 Burger</h2>
+            <p class="offer-desc">Order any king-sized signature burger and get another burger completely free.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">BOGOBURGER</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+
+        <!-- Offer 5 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/noodles.jpg" alt="Chinese Food Discount" class="card-img">
+            <span class="offer-badge">FLAT ₹75 OFF</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">₹75 OFF On Chinese</h2>
+            <p class="offer-desc">Savour wok-tossed noodles, manchurian, and bowls with flat ₹75 instant savings.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">CHINESE75</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+
+        <!-- Offer 6 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/thali.jpg" alt="Weekend Special Thali" class="card-img">
+            <span class="offer-badge">30% OFF</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">Weekend Thali Special</h2>
+            <p class="offer-desc">Royal unlimited thali sets with authentic curries and sweets at 30% off.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">WEEKEND30</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+
+        <!-- Offer 7 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/cake.jpg" alt="Dessert & Cake Deal" class="card-img">
+            <span class="offer-badge">FLAT 25% OFF</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">Dessert Craving Deal</h2>
+            <p class="offer-desc">Satisfy your sweet tooth with cakes, brownies and ice creams at 25% discount.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">SWEETTREAT</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+
+        <!-- Offer 8 -->
+        <article class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/momos.jpg" alt="Momos Fest Offer" class="card-img">
+            <span class="offer-badge">20% OFF</span>
+          </div>
+          <div class="offer-body">
+            <h2 class="offer-title">Momos Festival Deal</h2>
+            <p class="offer-desc">Enjoy steamed, fried, and tandoori momos platters with extra dips at 20% off.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">MOMOFEST</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Swiggy Clone</h3>
+          <p class="footer-brand-desc">Delicious food delivered to your doorstep from top restaurants with lightning-fast delivery.</p>
+          <p class="footer-brand-desc">© 2026 Swiggy Clone. All rights reserved.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">About Us</a></li>
+            <li><a href="restaurants.html" class="footer-link">Team</a></li>
+            <li><a href="offers.html" class="footer-link">Careers</a></li>
+            <li><a href="index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact & Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Help & Support</a></li>
+            <li><a href="index.html" class="footer-link">Partner with us</a></li>
+            <li><a href="index.html" class="footer-link">Ride with us</a></li>
+            <li><a href="index.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="index.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="index.html" class="footer-link">Cookie Policy</a></li>
+            <li><a href="index.html" class="footer-link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with pure HTML & CSS for high-speed performance.</p>
+        <p>GitHub & Vercel Deployment Ready</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

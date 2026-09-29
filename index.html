@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy Clone - Order Food Online Fast & Fresh</title>
+  <meta name="description" content="Order food online from top restaurants near you. Fast delivery, fresh food and great offers on Swiggy Clone.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="Swiggy Clone" class="nav-logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item active">Home</a>
+        <a href="restaurants.html" class="nav-item">Restaurants</a>
+        <a href="offers.html" class="nav-item">Offers</a>
+        <a href="search.html" class="nav-item">Search</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cart.html" class="cart-icon-btn">Cart <span class="cart-count">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag">Fastest Delivery in 30 Mins</span>
+          <h1 class="hero-title">Order food from your <span>favourite restaurants</span></h1>
+          <p class="hero-desc">Discover the best food and drinks near you. Explore handpicked restaurants, irresistible discounts, and superfast door-to-door delivery.</p>
+          <form action="search.html" method="get" class="hero-search-box">
+            <input type="text" name="q" placeholder="Search for restaurant, item or more" class="hero-search-input">
+            <button type="submit" class="btn btn-primary">Find Food</button>
+          </form>
+        </div>
+        <div class="hero-img-wrap">
+          <img src="images/hero-food.jpg" alt="Delicious Food Feast" class="hero-img">
+          <div class="hero-badge">
+            <span class="hero-badge-num">50% OFF</span>
+            <span class="hero-badge-text">On your first 3 orders with WELCOME50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">What's on your mind?</h2>
+          <p class="section-subtitle">Select your favourite cuisine to explore dishes</p>
+        </div>
+      </div>
+      <div class="category-row">
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/pizza.jpg" alt="Pizza" class="category-img"></div>
+          <span class="category-title">Pizza</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/burger.jpg" alt="Burger" class="category-img"></div>
+          <span class="category-title">Burger</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/biryani.jpg" alt="Biryani" class="category-img"></div>
+          <span class="category-title">Biryani</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/noodles.jpg" alt="Chinese" class="category-img"></div>
+          <span class="category-title">Chinese</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/dosa.jpg" alt="South Indian" class="category-img"></div>
+          <span class="category-title">South Indian</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/paneer.jpg" alt="North Indian" class="category-img"></div>
+          <span class="category-title">North Indian</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/momos.jpg" alt="Momos" class="category-img"></div>
+          <span class="category-title">Momos</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/pasta.jpg" alt="Pasta" class="category-img"></div>
+          <span class="category-title">Pasta</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/cake.jpg" alt="Desserts" class="category-img"></div>
+          <span class="category-title">Desserts</span>
+        </a>
+        <a href="restaurants.html" class="category-card">
+          <div class="category-img-box"><img src="images/drinks.jpg" alt="Beverages" class="category-img"></div>
+          <span class="category-title">Beverages</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR RESTAURANTS SECTION -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Popular Restaurants</h2>
+          <p class="section-subtitle">Top-rated dining spots with express doorstep delivery</p>
+        </div>
+        <a href="restaurants.html" class="btn btn-outline btn-sm">See All Restaurants</a>
+      </div>
+      <div class="grid-4">
+        <!-- Restaurant 1 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/paneer.jpg" alt="Spice Kitchen" class="card-img">
+            <span class="discount-ribbon">50% OFF UPTO ₹100</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Spice Kitchen</h3>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.5</span>
+              <span class="delivery-time">25-30 mins</span>
+            </div>
+            <p class="cuisine">North Indian, Mughlai, Curry</p>
+            <p class="location-price">₹350 for two • Sector 18</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 2 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/biryani.jpg" alt="Biryani House" class="card-img">
+            <span class="discount-ribbon">FLAT ₹120 OFF</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Biryani House</h3>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.6</span>
+              <span class="delivery-time">20-25 mins</span>
+            </div>
+            <p class="cuisine">Hyderabadi, Biryani, Kebabs</p>
+            <p class="location-price">₹400 for two • Central Market</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 3 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/pizza.jpg" alt="Pizza Corner" class="card-img">
+            <span class="discount-ribbon">40% OFF ON PIZZAS</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Pizza Corner</h3>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.3</span>
+              <span class="delivery-time">30-35 mins</span>
+            </div>
+            <p class="cuisine">Pizzas, Italian, Pastas</p>
+            <p class="location-price">₹500 for two • High Street</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 4 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/burger.jpg" alt="Burger Point" class="card-img">
+            <span class="discount-ribbon">FREE DELIVERY</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Burger Point</h3>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.2</span>
+              <span class="delivery-time">15-20 mins</span>
+            </div>
+            <p class="cuisine">Burgers, Shakes, American</p>
+            <p class="location-price">₹250 for two • City Center</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 5 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/dosa.jpg" alt="Dosa Cafe" class="card-img">
+            <span class="discount-ribbon">20% OFF ALL DOSAS</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Dosa Cafe</h3>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.7</span>
+              <span class="delivery-time">20-25 mins</span>
+            </div>
+            <p class="cuisine">South Indian, Filter Coffee</p>
+            <p class="location-price">₹200 for two • Temple Road</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 6 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/noodles.jpg" alt="Chinese Bowl" class="card-img">
+            <span class="discount-ribbon">FLAT ₹75 OFF</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Chinese Bowl</h3>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.1</span>
+              <span class="delivery-time">25-30 mins</span>
+            </div>
+            <p class="cuisine">Asian, Noodles, Manchurian</p>
+            <p class="location-price">₹300 for two • Park Plaza</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 7 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/thali.jpg" alt="Royal Thali" class="card-img">
+            <span class="discount-ribbon">30% OFF COMBOS</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Royal Thali</h3>
+            <div class="card-meta">
+              <span class="rating-badge rating-high">★ 4.8</span>
+              <span class="delivery-time">30-40 mins</span>
+            </div>
+            <p class="cuisine">Rajasthani, Gujarati, Thalis</p>
+            <p class="location-price">₹450 for two • Heritage Lane</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurant 8 -->
+        <article class="restaurant-card">
+          <div class="card-img-wrap">
+            <img src="images/momos.jpg" alt="Momos Hub" class="card-img">
+            <span class="discount-ribbon">BUY 1 GET 1</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Momos Hub</h3>
+            <div class="card-meta">
+              <span class="rating-badge">★ 4.4</span>
+              <span class="delivery-time">15-20 mins</span>
+            </div>
+            <p class="cuisine">Tibetan, Momos, Dumplings</p>
+            <p class="location-price">₹180 for two • Station Road</p>
+            <div class="card-action">
+              <a href="food-details.html" class="btn btn-outline btn-sm btn-block">View Menu</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR FOOD SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Popular Food</h2>
+          <p class="section-subtitle">Most ordered dishes in your neighbourhood</p>
+        </div>
+        <a href="search.html" class="btn btn-outline btn-sm">Explore Dishes</a>
+      </div>
+      <div class="grid-4">
+        <!-- Food 1 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/biryani.jpg" alt="Special Chicken Dum Biryani" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon non-veg"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Chicken Dum Biryani</h3>
+            </div>
+            <p class="cuisine">Biryani House • ★ 4.6</p>
+            <p class="food-desc">Aromatic long-grain basmati rice cooked with tender marinated chicken and royal spices.</p>
+            <div class="food-footer">
+              <span class="food-price">₹280</span>
+              <a href="food-details.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food 2 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/pizza.jpg" alt="Cheesy Margherita Pizza" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Cheesy Veggie Pizza</h3>
+            </div>
+            <p class="cuisine">Pizza Corner • ★ 4.4</p>
+            <p class="food-desc">Loaded with 100% mozzarella cheese, fresh basil, bell peppers, and golden corn.</p>
+            <div class="food-footer">
+              <span class="food-price">₹349</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food 3 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/burger.jpg" alt="Crispy Double Patty Burger" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Crispy Veg Burger</h3>
+            </div>
+            <p class="cuisine">Burger Point • ★ 4.3</p>
+            <p class="food-desc">Double crispy spiced vegetable patty with creamy chipotle sauce and fresh iceberg lettuce.</p>
+            <div class="food-footer">
+              <span class="food-price">₹179</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food 4 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/momos.jpg" alt="Steamed Dumplings" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Steamed Veg Momos</h3>
+            </div>
+            <p class="cuisine">Momos Hub • ★ 4.5</p>
+            <p class="food-desc">Authentic hand-folded dumplings stuffed with fresh vegetables, served with fiery red chutney.</p>
+            <div class="food-footer">
+              <span class="food-price">₹120</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food 5 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/dosa.jpg" alt="Mysore Masala Dosa" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Butter Masala Dosa</h3>
+            </div>
+            <p class="cuisine">Dosa Cafe • ★ 4.7</p>
+            <p class="food-desc">Crispy golden crepe smeared with generous butter, spiced potato masala and hot sambar.</p>
+            <div class="food-footer">
+              <span class="food-price">₹140</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food 6 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/paneer.jpg" alt="Paneer Butter Masala" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Paneer Butter Masala</h3>
+            </div>
+            <p class="cuisine">Spice Kitchen • ★ 4.5</p>
+            <p class="food-desc">Soft cottage cheese cubes simmered in a velvety rich tomato, cashew and butter gravy.</p>
+            <div class="food-footer">
+              <span class="food-price">₹240</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food 7 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/pasta.jpg" alt="Creamy Tomato Pasta" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Penne Red Sauce Pasta</h3>
+            </div>
+            <p class="cuisine">Pizza Corner • ★ 4.3</p>
+            <p class="food-desc">Al dente penne tossed in slow-cooked san marzano marinara sauce with parmesan.</p>
+            <div class="food-footer">
+              <span class="food-price">₹210</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food 8 -->
+        <div class="food-card">
+          <div class="card-img-wrap">
+            <img src="images/cake.jpg" alt="Belgian Chocolate Truffle Cake" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="food-header">
+              <span class="food-type-icon"><span class="food-type-dot"></span></span>
+              <h3 class="card-title">Chocolate Truffle Cake</h3>
+            </div>
+            <p class="cuisine">Sweet Corner • ★ 4.8</p>
+            <p class="food-desc">Decadent layered dark chocolate sponge infused with rich chocolate ganache glaze.</p>
+            <div class="food-footer">
+              <span class="food-price">₹320</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add +</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST OFFERS SECTION -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Best Offers For You</h2>
+          <p class="section-subtitle">Save big on your daily food cravings with active promo coupons</p>
+        </div>
+        <a href="offers.html" class="btn btn-outline btn-sm">View All Offers</a>
+      </div>
+      <div class="grid-3">
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/biryani.jpg" alt="Biryani Offer" class="card-img">
+            <span class="offer-badge">50% OFF</span>
+          </div>
+          <div class="offer-body">
+            <h3 class="offer-title">50% OFF On First Order</h3>
+            <p class="offer-desc">Get flat 50% discount up to ₹120 on your very first food order across all restaurants.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">WELCOME50</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/pizza.jpg" alt="Pizza Feast Offer" class="card-img">
+            <span class="offer-badge">FLAT ₹100 OFF</span>
+          </div>
+          <div class="offer-body">
+            <h3 class="offer-title">Flat ₹100 OFF On Pizzas</h3>
+            <p class="offer-desc">Enjoy delicious gourmet pizzas with flat ₹100 off on orders above ₹399.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">PIZZALOVE</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/fries.jpg" alt="Free Delivery" class="card-img">
+            <span class="offer-badge">FREE DELIVERY</span>
+          </div>
+          <div class="offer-body">
+            <h3 class="offer-title">Zero Delivery Charges</h3>
+            <p class="offer-desc">Free doorstep delivery on all orders from selected top-rated partner restaurants.</p>
+            <div class="coupon-row">
+              <span class="coupon-label">Coupon Code</span>
+              <span class="coupon-code">FREEDEL</span>
+            </div>
+            <a href="restaurants.html" class="btn btn-primary btn-sm btn-block">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Swiggy Clone</h3>
+          <p class="footer-brand-desc">Delicious food delivered to your doorstep from top restaurants with lightning-fast delivery.</p>
+          <p class="footer-brand-desc">© 2026 Swiggy Clone. All rights reserved.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">About Us</a></li>
+            <li><a href="restaurants.html" class="footer-link">Team</a></li>
+            <li><a href="offers.html" class="footer-link">Careers</a></li>
+            <li><a href="index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact & Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Help & Support</a></li>
+            <li><a href="index.html" class="footer-link">Partner with us</a></li>
+            <li><a href="index.html" class="footer-link">Ride with us</a></li>
+            <li><a href="index.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="index.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="index.html" class="footer-link">Cookie Policy</a></li>
+            <li><a href="index.html" class="footer-link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with pure HTML & CSS for high-speed performance.</p>
+        <p>GitHub & Vercel Deployment Ready</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

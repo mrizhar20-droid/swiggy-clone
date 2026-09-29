@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Swiggy Clone</title>
+  <meta name="description" content="Secure checkout. Select delivery address, choose payment option and complete your order.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.png" alt="Swiggy Clone" class="nav-logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="restaurants.html" class="nav-item">Restaurants</a>
+        <a href="offers.html" class="nav-item">Offers</a>
+        <a href="search.html" class="nav-item">Search</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cart.html" class="cart-icon-btn">Cart <span class="cart-count">4</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CHECKOUT SECTION -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Secure Checkout</h1>
+          <p class="section-subtitle">Confirm your delivery location and payment preference</p>
+        </div>
+      </div>
+
+      <div class="checkout-grid">
+        <!-- LEFT: ADDRESS & PAYMENT FORMS -->
+        <div>
+          <!-- DELIVERY ADDRESS BOX -->
+          <div class="checkout-box">
+            <h2 class="checkout-box-title">📍 1. Delivery Address</h2>
+
+            <!-- ADDRESS TYPE CARDS -->
+            <div class="address-cards-row">
+              <div class="address-type-card active">🏠 Home</div>
+              <div class="address-type-card">🏢 Work / Office</div>
+              <div class="address-type-card">📍 Other</div>
+            </div>
+
+            <form action="index.html" method="get">
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label class="form-label" for="full-name">Full Name</label>
+                  <input type="text" id="full-name" class="form-input" value="Aarav Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone-no">Mobile Number</label>
+                  <input type="tel" id="phone-no" class="form-input" value="+91 98765 43210" required>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label class="form-label" for="flat-no">House / Flat / Block</label>
+                  <input type="text" id="flat-no" class="form-input" value="Flat 402, Sunshine Towers" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="street-addr">Street / Area</label>
+                  <input type="text" id="street-addr" class="form-input" value="Park Street Avenue" required>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label class="form-label" for="city-name">City</label>
+                  <input type="text" id="city-name" class="form-input" value="Bengaluru" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="pincode">Pincode</label>
+                  <input type="text" id="pincode" class="form-input" value="560001" required>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- PAYMENT METHODS BOX -->
+          <div class="checkout-box">
+            <h2 class="checkout-box-title">💳 2. Payment Method</h2>
+            
+            <div class="payment-options-list">
+              <label class="payment-option-label">
+                <input type="radio" name="payment" checked>
+                <span>📱 <strong>UPI</strong> (Google Pay, PhonePe, Paytm, BHIM)</span>
+              </label>
+
+              <label class="payment-option-label">
+                <input type="radio" name="payment">
+                <span>💳 <strong>Credit or Debit Card</strong> (Visa, Mastercard, RuPay)</span>
+              </label>
+
+              <label class="payment-option-label">
+                <input type="radio" name="payment">
+                <span>💵 <strong>Cash on Delivery (COD)</strong></span>
+              </label>
+
+              <label class="payment-option-label">
+                <input type="radio" name="payment">
+                <span>🏦 <strong>Net Banking</strong> (All major Indian banks)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: ORDER SUMMARY CARD -->
+        <div>
+          <div class="bill-card">
+            <h2 style="font-size: 18px; font-weight: 800; margin-bottom: 16px; color: var(--dark);">Order Summary</h2>
+
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; font-size: 14px;">
+              <div style="display: flex; justify-content: space-between;">
+                <span>1x Chicken Dum Biryani</span>
+                <strong>₹280</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span>1x Crispy Veg Burger</span>
+                <strong>₹179</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span>1x Peri Peri French Fries</span>
+                <strong>₹110</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span>2x Punjabi Samosas</span>
+                <strong>₹90</strong>
+              </div>
+            </div>
+
+            <div class="bill-rows">
+              <div class="bill-row">
+                <span>Item Total</span>
+                <span>₹659</span>
+              </div>
+              <div class="bill-row">
+                <span>Delivery Fee</span>
+                <span>₹35</span>
+              </div>
+              <div class="bill-row discount-row">
+                <span>Discount Applied</span>
+                <span>− ₹100</span>
+              </div>
+              <div class="bill-row">
+                <span>Taxes & GST (5%)</span>
+                <span>₹37</span>
+              </div>
+              <div class="bill-total-row">
+                <span>Total Amount</span>
+                <span style="color: var(--primary);">₹631</span>
+              </div>
+            </div>
+
+            <div style="margin: 20px 0;">
+              <a href="index.html" class="btn btn-primary btn-block" style="font-size: 16px; padding: 14px;">Place Order (₹631)</a>
+            </div>
+
+            <p style="font-size: 12px; color: var(--text-light); text-align: center;">
+              🔒 100% Safe & Encrypted Transactions. By clicking Place Order you agree to the Terms of Service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Swiggy Clone</h3>
+          <p class="footer-brand-desc">Delicious food delivered to your doorstep from top restaurants with lightning-fast delivery.</p>
+          <p class="footer-brand-desc">© 2026 Swiggy Clone. All rights reserved.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">About Us</a></li>
+            <li><a href="restaurants.html" class="footer-link">Team</a></li>
+            <li><a href="offers.html" class="footer-link">Careers</a></li>
+            <li><a href="index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact & Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Help & Support</a></li>
+            <li><a href="index.html" class="footer-link">Partner with us</a></li>
+            <li><a href="index.html" class="footer-link">Ride with us</a></li>
+            <li><a href="index.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="index.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="index.html" class="footer-link">Cookie Policy</a></li>
+            <li><a href="index.html" class="footer-link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with pure HTML & CSS for high-speed performance.</p>
+        <p>GitHub & Vercel Deployment Ready</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
